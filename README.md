@@ -9,8 +9,9 @@ Below is a list of attributes for each dataset.
 
 ### baltimore Original Dataset Variables
 SRRecordID /
+
 ServiceRequestNum /
-SRType *
+SRType * / 
 MethodReceived
 CreatedDate *
 SRStatus
