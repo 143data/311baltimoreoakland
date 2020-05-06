@@ -1,0 +1,50 @@
+---
+title: "311call"
+author: "Erika Enomoto"
+date: "5/6/2020"
+output: pdf_document
+---
+# After accessing the datasets on the open data websites for each city Baltimore and Oakland,
+# I filtered the data to keep only the 311 calls logged after March 1, 2020 at 12:00 AM.
+# I initially tried to do this manually but the datasets were too large and kept crashing R Studio.
+
+library(dplyr)
+# data import for Baltimore dataset
+baltimore <- read.csv("311baltimore.csv", header=TRUE, sep=",")
+head(baltimore, 10)
+
+# data import for Oakland dataset
+oakland <- read.csv("311oakland.csv", header=TRUE, sep=",")
+head(oakland, 10)
+
+# print column names for baltimore
+names(baltimore)
+
+# retain relevant variables for baltimore dataset
+keeps <- c("SRType", "CreatedDate", "Address")
+baltimore <- baltimore[keeps]
+
+# replace street address with "Baltimore"
+library(dplyr)
+library(stringr)
+# str_split(as.character(baltimore$Address), ',')
+baltimore <- baltimore %>% mutate("Address" = replace("Baltimore", "Address" == " ", NA))
+
+#change column names of baltimore dataset
+colnames(baltimore) <- c("description", "call_date", "city")
+View(baltimore)
+
+# print column names for oakland
+names(oakland)
+
+# retain relevant variables for oakland dataset
+keeps <- c("DATETIMEINIT", "DESCRIPTION", "City")
+oakland <- oakland[keeps]
+
+#change column names of oakland dataset
+colnames(oakland) <- c("call_date", "description", "city")
+View(oakland)
+
+# vertical merge of baltimore and oakland datasets
+baltimoreoakland <- bind_rows(baltimore, oakland)
+View(baltimoreoakland)
