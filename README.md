@@ -8,8 +8,8 @@ After importing the filtered data into R Studio, I faced a few design choices re
 Below is a list of attributes for each dataset.
 
 ### baltimore Original Dataset Variables
-SRRecordID
-ServiceRequestNum
+SRRecordID /
+ServiceRequestNum /
 SRType *
 MethodReceived
 CreatedDate *
