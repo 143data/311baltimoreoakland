@@ -8,32 +8,20 @@ After importing the filtered data into R Studio, I faced a few design choices re
 ### baltimore Original Dataset Variables
 SRRecordID<br /> 
 ServiceRequestNum<br /> 
-
-SRType *
-
-MethodReceived
-
-CreatedDate *
-
-SRStatus
-
-StatusDate
-
-DueDate
-
-CloseDate
-
-Agency
-
-LastActivity
-
-LastActivityDate
-
-Outcome
-
-Address *
-ZipCode
-Neighborhood
+SRType * <br /> 
+MethodReceived<br /> 
+CreatedDate * <br /> 
+SRStatus<br /> 
+StatusDate<br /> 
+DueDate<br /> 
+CloseDate<br />
+Agency<br /> 
+LastActivity <br /> 
+LastActivityDate <br /> 
+Outcome <br /> 
+Address * <br /> 
+ZipCode <br /> 
+Neighborhood <br /> 
 CouncilDistrict
 PoliceDistrict
 PolicePost
