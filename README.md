@@ -3,22 +3,29 @@
 
 I accessed the Baltimore and Oakland datasets via each city's open data repository website. Before downloading each city's data as csv files, I used the filtering tool to keep and export only the 311 calls logged from March 1, 2020, 12:00 AM. Initially, I attempted to filter this manually using R but the complete datasets were too large and crashed R Studio every time.
 
-After importing the filtered data into R Studio, I faced a few design choices regarding which variables were relevant to the task at hand, which was to integrate the datasets of two city's 311 call data with a brief description of the call and the date. 
-
-Below is a list of attributes for each dataset.
+After importing the filtered data into R Studio, I faced a few design choices regarding which variables were relevant to the task at hand, which was to integrate the datasets of two city's 311 call data with a brief description of the call and the date. Below is a list of attributes for each dataset.
 
 ### baltimore Original Dataset Variables
-SRRecordID /
+SRRecordID
 
-ServiceRequestNum /
-SRType * / 
+ServiceRequestNum
+
+SRType *
+
 MethodReceived
+
 CreatedDate *
+
 SRStatus
+
 StatusDate
+
 DueDate
+
 CloseDate
+
 Agency
+
 LastActivity
 LastActivityDate
 Outcome
