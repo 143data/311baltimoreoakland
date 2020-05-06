@@ -50,4 +50,4 @@ PROBADDRESS<br />
 City * <br /> 
 State<br />  
 
-I removed all but three columns (marked with asteriks) for each dataset and renamed them so that the observations could be vertically integrated into one table. The new column names are description, call_date, and city.
+I removed all but three columns (marked with asterisks) for each dataset and renamed them so that the observations could be vertically integrated into one table. The new column names are description, call_date, and city.
