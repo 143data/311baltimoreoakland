@@ -22,32 +22,32 @@ Outcome <br />
 Address * <br /> 
 ZipCode <br /> 
 Neighborhood <br /> 
-CouncilDistrict
-PoliceDistrict
-PolicePost
-Latitude
-Longitude
-GeoLocation
-2010 Census Wards Precincts
-2010 Census Neighborhoods
-Zip Codes
+CouncilDistrict<br /> 
+PoliceDistrict<br /> 
+PolicePost<br /> 
+Latitude<br /> 
+Longitude<br /> 
+GeoLocation<br /> 
+2010 Census Wards Precincts<br /> 
+2010 Census Neighborhoods<br /> 
+Zip Codes<br /> 
 
 ### oakland Original Dataset Variables
-REQUESTID
-DATETIMEINIT *
-SOURCE
-DESCRIPTION *
-REQCATEGORY
-REQADDRESS
-STATUS
-REFERREDTO
-DATETIMECLOSED
-SRX
-SRY
-COUNCILDISTRICT
-BEAT
-PROBADDRESS
-City *
-State
+REQUESTID<br /> 
+DATETIMEINIT * <br /> 
+SOURCE<br /> 
+DESCRIPTION * <br /> 
+REQCATEGORY <br /> 
+REQADDRESS<br /> 
+STATUS<br /> 
+REFERREDTO<br /> 
+DATETIMECLOSED<br /> 
+SRX<br /> 
+SRY<br /> 
+COUNCILDISTRICT<br /> 
+BEAT<br /> 
+PROBADDRESS<br /> 
+City * <br /> 
+State<br />  
 
-I ended up eliminating all but three columns (marked with asteriks) for each dataset and renamed them so that the observations could be vertically integrated into one table. The new column names are description, call_date, and city.
+I removed all but three columns (marked with asteriks) for each dataset and renamed them so that the observations could be vertically integrated into one table. The new column names are description, call_date, and city.
