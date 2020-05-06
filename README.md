@@ -6,9 +6,8 @@ I accessed the Baltimore and Oakland datasets via each city's open data reposito
 After importing the filtered data into R Studio, I faced a few design choices regarding which variables were relevant to the task at hand, which was to integrate the datasets of two city's 311 call data with a brief description of the call and the date. Below is a list of attributes for each dataset.
 
 ### baltimore Original Dataset Variables
-SRRecordID
-
-ServiceRequestNum
+SRRecordID<br /> 
+ServiceRequestNum<br /> 
 
 SRType *
 
@@ -27,8 +26,11 @@ CloseDate
 Agency
 
 LastActivity
+
 LastActivityDate
+
 Outcome
+
 Address *
 ZipCode
 Neighborhood
